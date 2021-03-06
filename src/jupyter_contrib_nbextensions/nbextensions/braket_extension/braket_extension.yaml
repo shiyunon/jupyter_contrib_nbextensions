@@ -1,0 +1,18 @@
+Type: Jupyter Notebook Extension
+Compatibility: 3.x, 4.x, 5.x, 6.x
+Name: Braket extension
+Main: main.js
+Link: README.md
+Description: |
+  Braket programming helper
+
+Parameters:
+- name: hotkey
+  description: Hotkey for QPU detection
+  input_type: hotkey
+  default: Alt-B
+- name: init_delay
+  description: Add a delay before initializing the extension.
+  input_type: number
+  min: 0
+  default: 0
