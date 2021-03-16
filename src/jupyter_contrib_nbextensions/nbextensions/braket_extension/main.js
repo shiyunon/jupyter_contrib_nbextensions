@@ -32,7 +32,7 @@ define([
                 help    : 'qpu compatibility detection',
                 help_index : 'bq',
                 id : 'qpu_detection',
-                handler : showTooltip
+                handler : showCellText
             };
             var action_full_name = Jupyter.keyboard_manager.actions.register(action, name, prefix);
 
@@ -47,37 +47,31 @@ define([
         else {
             // we're in edit view
             var extraKeys = Jupyter.editor.codemirror.getOption('extraKeys');
-            extraKeys[hotkey_params.check_qpu] = showTooltip;
+            extraKeys[hotkey_params.check_qpu] = showCellText;
             CodeMirror.normalizeKeyMap(extraKeys);
             console.log('[braket extension] binding hotkey', hotkey_params.check_qpu);
             Jupyter.editor.codemirror.setOption('extraKeys', extraKeys);
         }
     };
  
-   function showTooltip () {
+   function showCellText () {
     var cm; 
-    var pos = {line: 0, ch: 0, xRel: 0}; 
+    var cell_text; 
     if (Jupyter.notebook !== undefined) {
         cm = Jupyter.notebook.get_selected_cell().code_mirror;
         if (Jupyter.notebook.mode === 'edit') {
-            pos = cm.getCursor();
+            cell_text = cm.getValue();
         }   
     }   
     else {
         cm = Jupyter.editor.codemirror;
-        pos = cm.getCursor();
+        cell_text = cm.getValue();
     }   
 
-    // alert(cm.getValue()); 
-    // alert(cm.getTokenAt(pos).className);
-    alert("This circuit can be instantiated on:\n Rigetti \n Local noise simulator \n ionQ");
+    alert(cell_text)
 
     }   
     var braket_extension = function () {
-
-        // console.log("hihi");
-        // this.cell = cell;
-        // this.editor = cell.code_mirror;
         var conf_sect;
         if (Jupyter.notebook) {
             // we're in notebook view
