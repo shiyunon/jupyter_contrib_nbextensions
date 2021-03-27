@@ -32,7 +32,7 @@ define([
                 help    : 'qpu compatibility detection',
                 help_index : 'bq',
                 id : 'qpu_detection',
-                handler : showCellText
+                handler : showFunctionText
             };
             var action_full_name = Jupyter.keyboard_manager.actions.register(action, name, prefix);
 
@@ -47,30 +47,43 @@ define([
         else {
             // we're in edit view
             var extraKeys = Jupyter.editor.codemirror.getOption('extraKeys');
-            extraKeys[hotkey_params.check_qpu] = showCellText;
+            extraKeys[hotkey_params.check_qpu] = showFunctionText;
             CodeMirror.normalizeKeyMap(extraKeys);
             console.log('[braket extension] binding hotkey', hotkey_params.check_qpu);
             Jupyter.editor.codemirror.setOption('extraKeys', extraKeys);
         }
     };
- 
-   function showCellText () {
-    var cm; 
-    var cell_text; 
-    if (Jupyter.notebook !== undefined) {
-        cm = Jupyter.notebook.get_selected_cell().code_mirror;
-        if (Jupyter.notebook.mode === 'edit') {
-            cell_text = cm.getValue();
+
+    function showFunctionText () {
+        var cell;
+        var cm; 
+        var cell_lines; 
+        var pos;
+        if (Jupyter.notebook !== undefined) {
+            cell = Jupyter.notebook.get_selected_cell()
+            cm = cell.code_mirror;
+            if (Jupyter.notebook.mode === 'edit') {
+                pos = cm.getCursor()
+                cell_lines = cm.getValue().split('\n');
+            }   
         }   
-    }   
-    else {
-        cm = Jupyter.editor.codemirror;
-        cell_text = cm.getValue();
-    }   
+        else {
+            cm = Jupyter.editor.codemirror;
+            pos = cm.getCursor()
+            cell_lines = cm.getValue().split('\n');
+        }   
 
-    alert(cell_text)
+        
+        alert(cell_lines[pos.line])  // shows current line
+        // alert(pos.line)
+        // alert(cell.config.mode)
+        // var tokens = tokenize(cell_text)
+        // alert(tokens)
 
-    }   
+        // cell_lines[pos.line]
+
+    };
+
     var braket_extension = function () {
         var conf_sect;
         if (Jupyter.notebook) {
