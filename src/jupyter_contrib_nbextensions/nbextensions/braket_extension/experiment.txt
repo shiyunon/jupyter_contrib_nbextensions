@@ -1,12 +1,12 @@
 hello 
-qc . iSWAP ( tuiektagenius )
-boye yeo
+qc . iSWAP ( t)
+abc defi
 qc . XX ( lol )
-arigato
+array
 
-helbygjyjlo 
-qbygbvvyic . iSWAP ( tuiektagenius )
-boye yeo
-qc . XX ( lol )
-arigato
+one 
+qubits . iSWAP ( qubit )
+one two
+qc . XX ( l )
+abc
 
