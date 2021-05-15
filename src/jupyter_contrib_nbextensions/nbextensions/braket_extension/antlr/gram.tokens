@@ -1,0 +1,7 @@
+T__0=1
+GATE=2
+QUBIT=3
+WHITESPACE=4
+Unknown=5
+WORD=6
+';'=1

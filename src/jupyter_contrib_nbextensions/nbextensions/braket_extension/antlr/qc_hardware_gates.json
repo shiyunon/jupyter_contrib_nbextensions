@@ -1,0 +1,8 @@
+{
+    "XX": ["ionQ"],
+    "Rx": ["Rigetti"],
+    "Ry": ["ionQ", "Rigetti"],
+    "Rz": ["Rigetti"],
+    "Cz": ["Rigetti"],
+    "iSWAP": ["Rigetti"]
+}
