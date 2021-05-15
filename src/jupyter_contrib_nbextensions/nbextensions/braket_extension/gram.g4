@@ -4,7 +4,7 @@ grammar gram;
 
 line : (line2)* (line1)* (line1* line2)* (line1 line2*)* (line2)*;
 
-line2 : WORD | ';';
+line2 : WORD | ';' | '\r\n'|'\n'|'\r';
 
 line1 : gate (qubit)* ;
 
