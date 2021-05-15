@@ -1,12 +1,7 @@
-hello 
-qc . iSWAP ( t)
-abc defi
-qc . XX ( lol )
-array
-
-one 
-qubits . iSWAP ( qubit )
-one two
-qc . XX ( l )
-abc
+XX g[a] bb[a]
+a
+while iSWAP h[a]
+Ry q[not];
+while true
+do this;
 
