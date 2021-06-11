@@ -1,0 +1,80 @@
+// Generated from gram.g4 by ANTLR 4.9.2
+// jshint ignore: start
+import antlr4 from 'antlr4';
+
+
+
+const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
+    "\u5964\u0002\u0007?\b\u0001\u0004\u0002\t\u0002\u0004\u0003\t\u0003",
+    "\u0004\u0004\t\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007",
+    "\t\u0007\u0004\b\t\b\u0004\t\t\t\u0003\u0002\u0003\u0002\u0003\u0003",
+    "\u0006\u0003\u0017\n\u0003\r\u0003\u000e\u0003\u0018\u0003\u0004\u0003",
+    "\u0004\u0003\u0005\u0003\u0005\u0003\u0006\u0003\u0006\u0003\u0006\u0003",
+    "\u0006\u0003\u0006\u0003\u0006\u0003\u0006\u0003\u0006\u0003\u0006\u0003",
+    "\u0006\u0003\u0006\u0003\u0006\u0003\u0006\u0003\u0006\u0003\u0006\u0005",
+    "\u0006.\n\u0006\u0003\u0007\u0003\u0007\u0003\u0007\u0003\u0007\u0003",
+    "\u0007\u0003\b\u0006\b6\n\b\r\b\u000e\b7\u0003\b\u0003\b\u0003\t\u0003",
+    "\t\u0003\t\u0003\t\u0002\u0002\n\u0003\u0003\u0005\u0002\u0007\u0002",
+    "\t\u0002\u000b\u0004\r\u0005\u000f\u0006\u0011\u0007\u0003\u0002\u0003",
+    "\u0005\u0002\u000b\f\u000e\u000f\"\"\u0002B\u0002\u0003\u0003\u0002",
+    "\u0002\u0002\u0002\u000b\u0003\u0002\u0002\u0002\u0002\r\u0003\u0002",
+    "\u0002\u0002\u0002\u000f\u0003\u0002\u0002\u0002\u0002\u0011\u0003\u0002",
+    "\u0002\u0002\u0003\u0013\u0003\u0002\u0002\u0002\u0005\u0016\u0003\u0002",
+    "\u0002\u0002\u0007\u001a\u0003\u0002\u0002\u0002\t\u001c\u0003\u0002",
+    "\u0002\u0002\u000b-\u0003\u0002\u0002\u0002\r/\u0003\u0002\u0002\u0002",
+    "\u000f5\u0003\u0002\u0002\u0002\u0011;\u0003\u0002\u0002\u0002\u0013",
+    "\u0014\u0007=\u0002\u0002\u0014\u0004\u0003\u0002\u0002\u0002\u0015",
+    "\u0017\u0004c|\u0002\u0016\u0015\u0003\u0002\u0002\u0002\u0017\u0018",
+    "\u0003\u0002\u0002\u0002\u0018\u0016\u0003\u0002\u0002\u0002\u0018\u0019",
+    "\u0003\u0002\u0002\u0002\u0019\u0006\u0003\u0002\u0002\u0002\u001a\u001b",
+    "\u0007]\u0002\u0002\u001b\b\u0003\u0002\u0002\u0002\u001c\u001d\u0007",
+    "_\u0002\u0002\u001d\n\u0003\u0002\u0002\u0002\u001e\u001f\u0007Z\u0002",
+    "\u0002\u001f.\u0007Z\u0002\u0002 !\u0007T\u0002\u0002!.\u0007{\u0002",
+    "\u0002\"#\u0007k\u0002\u0002#$\u0007U\u0002\u0002$%\u0007Y\u0002\u0002",
+    "%&\u0007C\u0002\u0002&.\u0007R\u0002\u0002\'(\u0007E\u0002\u0002(.\u0007",
+    "\\\u0002\u0002)*\u0007T\u0002\u0002*.\u0007z\u0002\u0002+,\u0007T\u0002",
+    "\u0002,.\u0007|\u0002\u0002-\u001e\u0003\u0002\u0002\u0002- \u0003\u0002",
+    "\u0002\u0002-\"\u0003\u0002\u0002\u0002-\'\u0003\u0002\u0002\u0002-",
+    ")\u0003\u0002\u0002\u0002-+\u0003\u0002\u0002\u0002.\f\u0003\u0002\u0002",
+    "\u0002/0\u0005\u0005\u0003\u000201\u0005\u0007\u0004\u000212\u0005\u0005",
+    "\u0003\u000223\u0005\t\u0005\u00023\u000e\u0003\u0002\u0002\u000246",
+    "\t\u0002\u0002\u000254\u0003\u0002\u0002\u000267\u0003\u0002\u0002\u0002",
+    "75\u0003\u0002\u0002\u000278\u0003\u0002\u0002\u000289\u0003\u0002\u0002",
+    "\u00029:\b\b\u0002\u0002:\u0010\u0003\u0002\u0002\u0002;<\u000b\u0002",
+    "\u0002\u0002<=\u0003\u0002\u0002\u0002=>\b\t\u0002\u0002>\u0012\u0003",
+    "\u0002\u0002\u0002\u0006\u0002\u0018-7\u0003\b\u0002\u0002"].join("");
+
+
+const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
+
+const decisionsToDFA = atn.decisionToState.map( (ds, index) => new antlr4.dfa.DFA(ds, index) );
+
+export default class gramLexer extends antlr4.Lexer {
+
+    static grammarFileName = "gram.g4";
+    static channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
+	static modeNames = [ "DEFAULT_MODE" ];
+	static literalNames = [ null, "';'" ];
+	static symbolicNames = [ null, null, "GATE", "QUBIT", "WHITESPACE", "Unknown" ];
+	static ruleNames = [ "T__0", "WORD", "LEFTBRACE", "RIGHTBRACE", "GATE", 
+                      "QUBIT", "WHITESPACE", "Unknown" ];
+
+    constructor(input) {
+        super(input)
+        this._interp = new antlr4.atn.LexerATNSimulator(this, atn, decisionsToDFA, new antlr4.PredictionContextCache());
+    }
+
+    get atn() {
+        return atn;
+    }
+}
+
+gramLexer.EOF = antlr4.Token.EOF;
+gramLexer.T__0 = 1;
+gramLexer.GATE = 2;
+gramLexer.QUBIT = 3;
+gramLexer.WHITESPACE = 4;
+gramLexer.Unknown = 5;
+
+
+

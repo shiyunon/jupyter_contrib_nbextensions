@@ -1,0 +1,22 @@
+{
+  "name": "antlr",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "Antlr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antlr4": "^4.9.2",
+    "body-parser": "^1.19.0",
+    "child": "0.0.3",
+    "express": "^4.17.1",
+    "process": "^0.11.10",
+    "prompt-sync": "^4.2.0",
+    "requirejs": "^2.3.6"
+  }
+}
