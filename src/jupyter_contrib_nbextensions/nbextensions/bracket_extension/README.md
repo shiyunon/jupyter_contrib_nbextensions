@@ -48,7 +48,9 @@ STEP 2 (Open terminal in bracket_extension directory)
 -----------------------------------
 Now when you install Jupyter Notebook extensions, you will have a file named `nbextensions`. The extension `bracket_extension` is a folder in this `nbextensions` folder. The `bracket_extension` file will generally be in the directory shown below where `USERNAME` is your username.
 `C:\Users\USERNAME\Anaconda3\new\envs\bracket\Lib\site-packages\jupyter_contrib_nbextensions\nbextensions\bracket_extension`.
-Once you are in this directory you have to open the command prompt.
+Once you are in this directory you have to open the command prompt. Your teminal will show something like:
+![image](https://user-images.githubusercontent.com/59942853/122107504-2367a080-cde9-11eb-8a67-72fac40a8e60.png)
+where the while area is your username.
 
 STEP 3 (Terminal)
 -----------------------------------
