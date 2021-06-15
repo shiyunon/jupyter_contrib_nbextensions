@@ -50,7 +50,7 @@ Once you are in this directory you have to open the command prompt.
 
 STEP 3 (Terminal)
 -----------------------------------
-In the terminal you have to give the following command : `node modules/nodescript.js`. Then in the same terminal you will be asked for input. You then have to just paste in this section and then press enter (You can paste by simply pressing the right mouse button). This will give you the desired output.
+In the terminal you have to give the following command : `node modules\nodescript.js`. Then in the same terminal you will be asked for input. You then have to just paste in this section and then press enter (You can paste by simply pressing the right mouse button). This will give you the desired output.
 
 
 
