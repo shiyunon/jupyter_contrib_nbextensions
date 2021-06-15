@@ -1,5 +1,5 @@
-Braket extension
-
+BRACKET EXTENSION
+=================================
 BASIC OVERVIEW
 -----------------------------------
 The extension tells you which gates can be run in which quantum computer based on the logic that: 
