@@ -64,7 +64,14 @@ This extension has many scopes of improvement. Some are listed below:
 
 1. The user experience can be improved by reducing the number of steps needed to run this extension. 
 2. The grammar file: `gram.g4` in the `bracket_extension\modules` file can be improved and more gates can be included.
-3. The `HTMLQCListener` in the `bracket_extension\modules` file can be edited so that the final output is like "`This function can be run on ... hardware`" where `...` can be IonQ, Rigetti or Null.
+3. The `HTMLQCListener.js` in the `bracket_extension\modules` file can be edited so that the final output is like "`This function can be run on ... hardware`" where `...` can be IonQ, Rigetti or Null.
+
+Helpful Sources
+--------------------------------
+
+1. https://towardsdatascience.com/how-to-write-a-jupyter-notebook-extension-a63f9578a38c
+2. https://tomassetti.me/antlr-mega-tutorial/
+3. https://stackoverflow.com/questions/1931307/antlr-is-there-a-simple-example
 
 
 
