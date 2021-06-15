@@ -10,7 +10,7 @@ For `IONQ`, native gates are `XX` and `Ry`.
 
 For example, if you have this code block:
 ```
-def segment {
+def bracket {
     // comments will be neglected
     bit[2] b;  
     reset anc;  
@@ -41,6 +41,8 @@ The UI of the extension is unfortunately not very smooth. Additionally note that
 STEP 1 (Button)
 -----------------------------------
 The extension automatically creates a planet Jupyter Cell icon in the toolbar of Jupyter notebook. First of all, you have to put your cursor and click on the function declaration line (for example `def qubit_rotate {` is the function declaration line). Then you have to press the  planet Jupyter Cell icon which will give you a pop-up with the test: `The functionbody you copied is: \\relevant function body`. All form of comments (block/single) will be ignored. By pressing this button, the function body will be automatically copied to the clipboard. 
+![image](https://user-images.githubusercontent.com/59942853/122107160-c79d1780-cde8-11eb-824e-6de7d52fe678.png)
+
 
 STEP 2 (Open terminal in bracket_extension directory)
 -----------------------------------
@@ -59,7 +61,7 @@ POSSIBLE IMPROVEMENTS
 This extension has many scopes of improvement. Some are listed below:
 
 1. The user experience can be improved by reducing the number of steps needed to run this extension. 
-2. The grammar file: `gram.g4` in the `bracket_extension\modules` file can be improved and more gates can be included. 
+2. The grammar file: `gram.g4` in the `bracket_extension\modules` file can be improved and more gates can be included.
 
 
 
