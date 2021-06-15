@@ -11,7 +11,7 @@ For `IONQ`, native gates are `XX` and `Ry`.
 For example, if you have this code block:
 ```
 def bracket {
-    // comments will be neglected
+    // comments will be ignored
     bit[2] b;  
     reset anc;  
     Rz q[0];    
