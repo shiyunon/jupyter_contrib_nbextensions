@@ -51,6 +51,9 @@ Now when you install Jupyter Notebook extensions, you will have a file named `nb
 Once you are in this directory you have to open the command prompt. Your teminal will show something like:
 ![image](https://user-images.githubusercontent.com/59942853/122107504-2367a080-cde9-11eb-8a67-72fac40a8e60.png)
 where the white area is your username.
+Furthermore, `bracket` is the channel of Jupyter Notebook. 
+![image](https://user-images.githubusercontent.com/59942853/122124479-5582fd80-cdfd-11eb-9a6f-4fd2756b948a.png)
+
 
 STEP 3 (Terminal)
 -----------------------------------
